@@ -49,7 +49,7 @@ func createapp(cmd *Command, args []string) {
 		os.Exit(2)
 	}
 	haspath := false
-	if crupath != path.Join(gopath, "src") {
+	if crupath == path.Join(gopath, "src") {
 		wgopath := strings.Split(gopath, ";")
 		if len(wgopath) >= 1 {
 			for _, wg := range wgopath {
