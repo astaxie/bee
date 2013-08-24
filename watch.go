@@ -105,7 +105,7 @@ func Autobuild() {
 	}
 
 	if err == nil {
-		bcmd := exec.Command("go", "build")
+		bcmd := exec.Command("go", "build", "-o", appname)
 		bcmd.Stdout = os.Stdout
 		bcmd.Stderr = os.Stderr
 		err = bcmd.Run()
