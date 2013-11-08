@@ -77,6 +77,7 @@ var commands = []*Command{
 	cmdApiapp,
 	cmdRouter,
 	cmdTest,
+	cmdJs,
 	//cmdReStart,
 }
 
